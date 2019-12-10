@@ -7,7 +7,7 @@ body{
 .headr
 {
     font-size: 70px;
-    margin-top:70px ;
+    margin-top:40px ;
     background: #34325C;
     text-align: center;
     color: #ffffff;
@@ -57,4 +57,14 @@ body{
 }
 .tms{
     margin-left: -24;
+}
+.btnn
+{
+    width: 280px;
+    height: 40px;
+    border-radius: 11px;
+    border: none;
+    background: #423E71;
+    color: white;
+    margin: 10px 40px;
 }
