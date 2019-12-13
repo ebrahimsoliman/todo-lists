@@ -19,6 +19,10 @@ body{
     background-color: #423E71!important;
     color: #ffffff;
 }
+.itm p {
+    display: inline;
+    cursor: pointer;
+}
 .itm span{
     float: right;
     font-size: 20px;
