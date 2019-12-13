@@ -17,31 +17,27 @@
     <div class="row justify-content-center lst">
         <div class="col-6">
             <ul class="list-group lstg">
-                <li class="itm list-group-item">Cras justo odio
-                    <span><i class=" fas fa-check"></i> <i class="fas  fa-trash-alt"></i></span></li>
-                <li class="itm list-group-item">Dapibus ac facilisis in<span><i class="fas fa-check"></i> <i
-                        class="fas  fa-trash-alt"></i></span></li>
-                <li class="itm list-group-item">Morbi leo risus<span><i class="fas fa-check"></i> <i
-                        class="fas  fa-trash-alt"></i></span></li>
-                <li class="itm list-group-item">Porta ac consectetur ac<span><i class=" fas fa-check"></i> <i
-                        class="fas  fa-trash-alt"></i></span></li>
-                <li class="itm list-group-item">Vestibulum at eros<span><i class=" fas fa-check"></i> <i
-                        class="fas  fa-trash-alt"></i></span></li>
+                <li class="itm list-group-item">Click here to edit<span class="del"><i
+                        class="fas delo  fa-trash-alt"></i></span><span class="k"><i class=" fas fa-check"></i></span></li>
             </ul>
         </div>
     </div>
-    <form action="">
-    <div class="row justify-content-center frm">
-        <div class="col-3 scd">
+    <form action="" name="list" class="lstaa">
+        <div class="row justify-content-center frm">
+            <div class="col-3 scd">
 
-            
+
                 <label class="mx-2" for="num">add</label>
-                <input type="number" name="num" id="num">
-                <span class="uparrow"><i class="fas fa-sort-up"></i></span>
-                <span class="dnarrow"><i class="fas fa-sort-down"></i></span>
+                <input type="number" value="0" name="num" id="num">
+
+                <button class="uparrow"><i style=" color:white;position: relative;bottom: 5px;right: 4px;"
+                                           class="fas fa-sort-up">
+                </i></button>
+                <button class="dnarrow"><i style=" color:white;position: relative;bottom: 5px;right: 4px;"
+                                           class="fas fa-sort-down"></i></button>
                 <span class="tms">items</span>
+            </div>
         </div>
-    </div>
         <div class="row justify-content-center">
             <div class="col-4">
                 <input class="btnn" type="submit" value="add">
