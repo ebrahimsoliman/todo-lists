@@ -48,9 +48,14 @@ lstg.addEventListener('click', e => {
     if (e.target.tagName === "P") {
         let c = e.target.textContent;
 
-        e.target.innerHTML = '<input class="pt" autofocus type="text" value="' + c + '" name="list" id="">'
+        e.target.innerHTML = '<input  class="pt" autofocus type="text" value="' + c + '" name="list" id="">'
+       e.target.firstChild.select().focus();
         inp = document.querySelectorAll('.pt');
+
         inputs = document.querySelectorAll(".npt");
+
+    }
+    else {
 
     }
 
@@ -87,7 +92,7 @@ body.addEventListener('click', ev => {
 
     inputs.forEach((put) => {
         inp.forEach((inut) => {
-            if (ev.target != inut && !(ev.target.classList.contains("npt") && ev.target.firstCild.tagName == "INPUT")) {
+            if ((ev.target != inut && !(ev.target.classList.contains("npt") && ev.target.firstCild.tagName == "INPUT")) || (ev.target.classList.contains("npt") && !(ev.target.firstCild.tagName == "INPUT") && ev.target.ParentElement.siblings().firstChild.firstChild.tagName == "INPUT")) {
                 inut.parentElement.innerHTML = inut.value;
             }
         })
